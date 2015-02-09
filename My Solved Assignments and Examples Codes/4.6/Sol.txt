@@ -1,0 +1,17 @@
+def computepay(h,r):
+    if h<= 40:
+        p = r * h
+    else:
+        p = r*40 +(r*1.5*(h-40))
+    return p
+
+try:
+    hrs = raw_input("Enter Hours:")
+    hours = float(hrs)
+    inp = raw_input("Enter Rate:")
+    rate = float(inp)
+except:
+    print "Error,Please enter numeric input"
+    quit()
+p = computepay(hours,rate)
+print p

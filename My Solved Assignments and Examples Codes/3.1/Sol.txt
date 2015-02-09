@@ -1,0 +1,9 @@
+hrs = raw_input("Enter Hours:")
+h = float(hrs)
+rate = raw_input("Enter the rate of pay:")
+r = float(rate)
+if h>40:
+    cost = ((h-40)*r*1.50)+(40*r)
+else:
+    cost = (h*r)
+print cost

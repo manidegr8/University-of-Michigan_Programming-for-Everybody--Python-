@@ -1,0 +1,7 @@
+print "Hello Akhil"
+inp = raw_input('European Floor?')
+#data we get always from raw_input() is a string data type .So we need to convert it back required data type.
+usf = int(inp)+1
+print "US Floor",usf
+print usf
+

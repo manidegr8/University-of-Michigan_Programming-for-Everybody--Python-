@@ -1,0 +1,16 @@
+score = raw_input("Pls give score:")
+s = float(score)
+try:
+    if s<0.6:
+        print "F"
+    elif s >= 0.9: # s>=0.9 && s<=1.0
+        print "A"
+    elif s >= 0.8: # s>=0.8 && s<=0.9
+        print "B"
+    elif s >= 0.7:
+        print "C"
+    elif s >= 0.6:
+        print "D"
+except:
+    print "error,Value is out of range"
+    exit(1)

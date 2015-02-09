@@ -1,0 +1,9 @@
+# Use words.txt as the file name
+fname = raw_input("Enter file name: ") # Just Press Enter
+if len(fname) == 0:
+    fname = 'words.txt'
+fh = open(fname)
+for line in fh:
+    line = line.rstrip().upper()
+   # line = line.upper()
+    print line
